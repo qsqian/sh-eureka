@@ -1,0 +1,23 @@
+server:
+  port: 1111
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: shuhai  # 用户名
+    password: shuhai123   # 用户密码
+
+eureka:
+  instance:
+    hostname: 172.22.192.184
+    preferIpAddress: true
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://shuhai:shuhai123@${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    enable-self-preservation: false
+logging:
+  config: classpath:logback_boot.xml

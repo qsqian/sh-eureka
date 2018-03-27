@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+/.idea/
+/log/
+/target/
+/shsc-eureka.iml
+/.classpath
+/.project
+.settings/
+*.iml
+.mvn/wrapper/maven-wrapper.jar
